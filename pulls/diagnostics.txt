@@ -1,0 +1,10 @@
+2025-09-09 13:42:38 | Connected to 192.168.1.45:4370 SN=ZK_192-168-1-45
+2025-09-09 13:42:38 | SSR_GetGeneralLogDataEx path failed: SSR_GetGeneralLogDataEx returned zero rows.
+2025-09-09 13:42:38 | SSR_GetDeviceData error fields='Pin,CheckTime,VerifyCode,WorkCode': invalid literal for int() with base 10: 'ATTLOG'
+2025-09-09 13:42:38 | SSR_GetDeviceData error fields='PIN,Time,VerifyCode,WorkCode': invalid literal for int() with base 10: 'ATTLOG'
+2025-09-09 13:42:38 | SSR_GetDeviceData error fields='PIN,Time': invalid literal for int() with base 10: 'ATTLOG'
+2025-09-09 13:42:38 | SSR_GetDeviceData path failed: SSR_GetDeviceData empty/unparseable on this unit.
+2025-09-09 13:42:38 | GetDataFile('attlog.dat') error: IZKEM.GetDataFile() takes from 1 to 4 positional arguments but 5 were given
+2025-09-09 13:42:38 | GetDataFile('ATTLOG.dat') error: IZKEM.GetDataFile() takes from 1 to 4 positional arguments but 5 were given
+2025-09-09 13:42:38 | GetDataFile('ATTLOG.TXT') error: IZKEM.GetDataFile() takes from 1 to 4 positional arguments but 5 were given
+2025-09-09 13:42:38 | GetDataFile('attlog.txt') error: IZKEM.GetDataFile() takes from 1 to 4 positional arguments but 5 were given

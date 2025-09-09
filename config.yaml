@@ -1,0 +1,95 @@
+capture:
+  directory: captures
+  zk_proxy_requests: true
+devices:
+- ip: relay
+  name: ZK-RELAY-01
+  password: ''
+  push_sn: ZK-RELAY-01
+  use_device_serial: true
+  username: ''
+  vendor: ZK
+legacy_pull:
+  auto_register: true
+  devices:
+  - name: Front Door UF200
+    ip: 192.168.1.45
+    port: 4370
+    enabled: true
+    interval_min: 5
+    clear_after_push: true
+    wdms_url: null
+    note: ''
+    last_run: 1757414577.259854
+  - name: Warehouse F18
+    ip: 192.168.1.60
+    port: 4370
+    enabled: false
+    interval_min: 10
+    clear_after_push: true
+    wdms_url: null
+    note: ''
+    last_run: 0.0
+  enabled: true
+  py32: C:\Users\peter\AppData\Local\Programs\Python\Python313-32\python.exe
+  wdms_url: http://cloud.sabreproducts.com:81/iclock
+  py32_path: C:\Users\peter\AppData\Local\Programs\Python\Python313-32\python.exe
+  python32: C:\Users\peter\AppData\Local\Programs\Python\Python313-32\python.exe
+  heartbeat:
+    enabled: false
+    interval_min: 5
+logging:
+  file: C:/SabreBridge/sabre_bridge.log
+  level: DEBUG
+person_map:
+  path: person_map.csv
+relay:
+  enabled: false
+  port: 9090
+  wdms_url: http://cloud.sabreproducts.com:81/iclock
+  auto_add: true
+  device_sn_map:
+    ZK-RELAY-01: ZK-RELAY-01
+    NYU7244600055: NYU7244600055
+  devices:
+  - sn: NYU7244600055
+    type: ZKCloud
+    enabled: true
+    note: auto-added by relay
+    ip: 192.168.1.205
+    port: 9090
+  - sn: ZK-RELAY-01
+    type: ZKCloud
+    ip: 127.0.0.1
+    port: 9090
+    enabled: true
+time_sync:
+  daily_at: 02:30
+  enabled: true
+  ntp_server: time.google.com
+  on_first_connect: true
+  timezone: UTC+02:00
+  zk_inject_on_getrequest: true
+utime_sink:
+  mode: push
+  push:
+    device_sn: SABRE-BRIDGE-DEFAULT
+    username: admin
+    password: 247@Products
+    wdms_url: http://cloud.sabreproducts.com:81/iclock
+verify_map:
+  card: '1'
+  face: '200'
+  fingerprint: '11'
+  palm: '201'
+  password: '0'
+  qr: '5'
+wdms_url: http://cloud.sabreproducts.com:81/iclock
+wdms_auth:
+  username: admin
+  password: 247@Products
+monitor:
+  interval_min: 5
+app:
+  relay_autostart: true
+  scheduler_autostart: false
